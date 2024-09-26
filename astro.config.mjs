@@ -9,6 +9,11 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://jeremydormitzer.com",
+  markdown: {
+    shikiConfig: {
+      theme: "dracula",
+    },
+  },
   integrations: [
     mdx(),
     sitemap(),
