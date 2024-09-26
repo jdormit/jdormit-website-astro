@@ -3,6 +3,7 @@ title: What is ActivityPub, and how will it change the internet?
 author: Jeremy Dormitzer
 pubDate: 2018-09-15
 ---
+
 <img alt="a network-shaped board game" src="/images/board-game.jpg" />
 
 ## A new kind of social network
@@ -15,7 +16,7 @@ Why does this matter? It means that Mastodon users have choice about where they 
 
 The federated model also tends to align incentives better than centralized alternatives. Mastodon instances are usually run and moderated by members of the community that uses that particular Mastodon server – for example, I’m part of a community of tech folks over at [mastodon.technology](https://mastodon.technology/invite/JguyVqcL), and our server is administrated and moderated by a member of the community. He has a vested interest in making mastodon.technology a nice place to hang out since he hangs out there too. Contrast that with Twitter: Twitter is owned and operated by a massive, venture-backed, for-profit corporation. Now, I’m certainly not against companies making money (more on that later), but Twitter only cares about making Twitter a nice place to hang out to the extent that they profit by it, which has led them to make [some user-unfriendly choices](http://www.slate.com/articles/technology/cover_story/2017/03/twitter_s_timeline_algorithm_and_its_effect_on_us_explained.html).
 
-So Mastodon is pretty cool. But that’s not what really gets me excited. I’m excited about how Mastodon servers allow users on different instances to interact. It’s a protocol called [ActivityPub](https://activitypub.rocks/), and it’s going to change the way the internet works. 
+So Mastodon is pretty cool. But that’s not what really gets me excited. I’m excited about how Mastodon servers allow users on different instances to interact. It’s a protocol called [ActivityPub](https://activitypub.rocks/), and it’s going to change the way the internet works.
 
 ## ActivityPub
 
@@ -25,7 +26,7 @@ This is how Mastodon instances let users interact with users on other instances:
 
 ActivityPub is much bigger than just Mastodon, though. It’s a language that any application can implement. For example, there’s a YouTube clone called [PeerTube](https://joinpeertube.org/en/faq/) that also implements ActivityPub. Because it speaks the same language as Mastodon, a Mastodon user can follow a PeerTube user. If the PeerTube user posts a new video, it will show up in the Mastodon user’s feed. The Mastodon user can comment on the PeerTube video directly from Mastodon. Think about that for a second. Any app that implements ActivityPub becomes part of a massive social network, one that conserves user choice and tears down walled gardens. Imagine if you could log into Facebook and see posts from your friends on Instagram and Twitter, without needing an Instagram or Twitter account.
 
-So here’s how ActivityPub is going to change the internet: 
+So here’s how ActivityPub is going to change the internet:
 
 ## No more walled gardens
 
@@ -41,7 +42,7 @@ With traditional internet media, you need to rely on external services to share 
 
 ## It’s going to be an uphill battle
 
-I hope I’ve convinced you of the radical impact that ActivityPub could have on the internet. But there are some significant barriers preventing widespread adoption. The thorniest one is money. 
+I hope I’ve convinced you of the radical impact that ActivityPub could have on the internet. But there are some significant barriers preventing widespread adoption. The thorniest one is money.
 
 Why is money an issue? Aren’t Mastodon and PeerTube free and open-source? Well, first of all, open source projects need funding too (that’s a big topic that deserves its own blog post, so I’m leaving it alone for now). The bigger issue right now is user adoption. The ActivityPub network is only viable if people use it, and to compete in any significant way with Facebook and Twitter we need a lot of people to use it. To compete with the big guys, we need big money. We need to be able to spread the word through marketing and blogging, to engineer new ActivityPub applications, and to support people working full-time on bringing about this revolution.
 

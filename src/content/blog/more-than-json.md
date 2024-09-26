@@ -3,7 +3,8 @@ title: "More than JSON: ActivityPub and JSON-LD"
 author: Jeremy Dormitzer
 pubDate: 2019-04-23
 ---
-> *In which our hero discovers the power of normalization and JSON-LD*
+
+> _In which our hero discovers the power of normalization and JSON-LD_
 
 ## The problem with JSON
 
@@ -79,9 +80,7 @@ So what’s the actual solution for this? Well, as it turns out these were exact
         "@value": "2015-01-25T12:34:56Z"
       }
     ],
-    "@type": [
-      "https://www.w3.org/ns/activitystreams#Create"
-    ]
+    "@type": ["https://www.w3.org/ns/activitystreams#Create"]
   }
 ]
 ```

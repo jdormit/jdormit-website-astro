@@ -3,11 +3,12 @@ title: Announcing Pterotype
 author: Jeremy Dormitzer
 pubDate: 2018-11-15
 ---
+
 <img alt="a cute pterodactyl" src="/images/pterotype.png" />
 
 In [my last post](https://jeremydormitzer.com/blog/what-is-activitypub.html), I wrote about an emerging web standard called ActivityPub that lets web services interoperate and form a federated, open social network. I made an argument about how important this new standard is – how it tears down walled gardens, discourages monopolies and centralization, and encourages user freedom.
 
-I genuinely believe what I wrote, too. And so, to put my money where my mouth is, I’m excited to announce [Pterotype](https://getpterotype.com/)! It’s a WordPress plugin that gives your blog an ActivityPub feed so that it can take advantage of all the benefits ActivityPub has to offer. 
+I genuinely believe what I wrote, too. And so, to put my money where my mouth is, I’m excited to announce [Pterotype](https://getpterotype.com/)! It’s a WordPress plugin that gives your blog an ActivityPub feed so that it can take advantage of all the benefits ActivityPub has to offer.
 
 ## Why WordPress?
 

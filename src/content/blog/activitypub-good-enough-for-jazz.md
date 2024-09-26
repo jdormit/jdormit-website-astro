@@ -3,6 +3,7 @@ title: "ActivityPub: Good enough for jazz"
 author: Jeremy Dormitzer
 pubDate: 2019-01-07
 ---
+
 <img alt="activitypub" src="/images/activitypub.png" />
 
 [Kaniini](https://pleroma.site/users/kaniini), one of the lead developers of Pleroma, recently published a blog post called [ActivityPub: The “Worse is Better” Approach to Federated Social Networking](https://blog.dereferenced.org/activitypub-the-worse-is-better-approach-to-federated-social-networking). It’s a critique of the security and safety of the [ActivityPub protocol](https://jeremydormitzer.com/blog/what-is-activitypub-and-how-will-it-change-the-internet/). They make some good points:

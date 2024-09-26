@@ -1,14 +1,14 @@
 ---
-import BaseHead from '../../components/BaseHead.astro';
-import Header from '../../components/Header.astro';
-import Footer from '../../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
-import { getCollection } from 'astro:content';
-import FormattedDate from '../../components/FormattedDate.astro';
-import Excerpt from '../../components/Excerpt.astro';
+import BaseHead from "../../components/BaseHead.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../../consts";
+import { getCollection } from "astro:content";
+import FormattedDate from "../../components/FormattedDate.astro";
+import Excerpt from "../../components/Excerpt.astro";
 
-const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
@@ -24,16 +24,20 @@ const posts = (await getCollection('blog')).sort(
       <section>
         <ul>
           {
-          posts.map((post) => (
-          <li class="mt-12">
-            <h4 class="text-xl">{post.data.title}</h4>
-            <p class="text-sm">
-              Posted on <FormattedDate date={post.data.pubDate} />
-            </p>
-            <p class="mt-4"><Excerpt post={post} pruneLength={500} /></p>
-            <p class="mt-4"><a href={`/blog/${post.slug}/`}>Read more...</a></p>
-          </li>
-          ))
+            posts.map((post) => (
+              <li class="mt-12">
+                <h4 class="text-xl">{post.data.title}</h4>
+                <p class="text-sm">
+                  Posted on <FormattedDate date={post.data.pubDate} />
+                </p>
+                <p class="mt-4">
+                  <Excerpt post={post} pruneLength={500} />
+                </p>
+                <p class="mt-4">
+                  <a href={`/blog/${post.slug}/`}>Read more...</a>
+                </p>
+              </li>
+            ))
           }
         </ul>
       </section>

@@ -3,6 +3,7 @@ title: A DSL for music
 author: Jeremy Dormitzer
 pubDate: 2018-08-05
 ---
+
 ## Haskell School of Music
 
 I recently discovered Haskell School of Music. It’s a book about algorithmic music, which is awesome because: a) I’ve been obsessed with procedural generation for years and b) I like music as much as I like programming. So you can imagine my excitement when I discovered that someone had written a textbook combining my favorite areas of study.
@@ -129,4 +130,3 @@ Like the Hiccup vectors, our music vectors blur the boundary between a DSL and a
 ## What's next
 
 So I have a way to represent music in Clojure now. What’s next? Haskell School of Music ships with a library called Euterpea that knows how to turn the Music data structure into actual sound. So the next step for me is probably porting something like that to Clojure. I’m hoping to offload most of that work to Overtone. After that, I’ll explore algorithmic composition using the techniques outlined in HSoM. Stay tuned!
-

@@ -7,6 +7,7 @@ pubDate: 2021-11-11
 2021 is almost over! And it's been over a year since I've written anything about [my work-in-progress graph database unifyDB](/blog/unifydb-dev-diary-0-intro). BUT just because I'm bad at blogging doesn't mean I haven't made any progress. In fact, a bunch of exciting stuff happened for unifyDB in 2021, and I'm going to info-dump it all on you 🙃.
 
 ## Aggregation, sorting and limiting
+
 This one was really exciting, as it marked a huge step towards making unifyDB truly useful. I added the ability to aggregate, sort, and limit query results. Here's what the syntax looks like:
 
 ```clojure
@@ -17,7 +18,7 @@ This one was really exciting, as it marked a huge step towards making unifyDB tr
  :limit 5}
 ```
 
-Aggregate expressions appear in parentheses (like a function call) in the find clause - the `(min ?age)` in this example. This query will return five biggest minimum ages for every job role in a database of employee data. 
+Aggregate expressions appear in parentheses (like a function call) in the find clause - the `(min ?age)` in this example. This query will return five biggest minimum ages for every job role in a database of employee data.
 
 One feature of this system I'm particularly proud of is implicit grouping. Take a look at that find clause again: `[?role (min ?age)]`. We are asking for both a non-aggregated variable, `?role`, and an aggregated one `?age`. In a SQL query, we'd need to specify how construct groups of roles before we can find the minimum age of each group using a `GROUP BY` clause:
 
@@ -30,6 +31,7 @@ GROUP BY role
 The unifydDB query engine is smart enough to figure out that we need to group the result set by `role` before finding the minimum age of each group. If we add additional scalar or aggregate variables in the find clause, the query engine will automatically construct the appropriate groups such that all scalar variables have single values in each group.
 
 ## Entity-level transactions and "pull" queries
+
 unifyDB is technically a tuplestore - that is, its core unit of data is a "fact" tuple consisting of `[entity attribute value]` pairs. An entity is therefore represented as a set of data tuples:
 
 ```clojure
@@ -109,6 +111,7 @@ Let's pull apart the pull syntax (heh, see what I did there?). A pull query is a
 Taken together, these two new features allow unifyDB to function as a document store in addition to its existing utility as a tuplestore. That's a huge boost for its use as a general-purpose application database.
 
 ## unifyDB presentation at Boston Clojure Meetup
+
 I gave a talk on unifyDB for the [Boston Clojure Meetup](https://www.meetup.com/Boston-Clojure-Group/)! Due to my aforementioned lack of blogging, this is now the most in-depth look at the database available. I covered a brief history of the project, gave a demo of its capabilities at the time of recording, and answered some questions about the codebase. Do note that this was recorded before I added most of the features discussed in this post, so parts of the demo are slightly out of date. But on the whole it's still a worthwhile showcase of some of unifyDB's core features.
 
 Here's the full recording:
@@ -116,7 +119,8 @@ Here's the full recording:
 <iframe style="margin: auto auto 2em auto;" width="560" height="315" src="https://www.youtube-nocookie.com/embed/hqQQyxeE-4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## What's next?
-If you made it this far, thanks for sticking with me! I'm really excited about the improvements that came to unifyDB in 2021. But  there's still quite a bit more to do before we can consider this thing released. In no particular order:
+
+If you made it this far, thanks for sticking with me! I'm really excited about the improvements that came to unifyDB in 2021. But there's still quite a bit more to do before we can consider this thing released. In no particular order:
 
 - the other flagship feature, built-in access management. Alongside historical queries (which is already implemented), this is the key problem I'm trying to solve with unifyDB. The access management feature will allow fine-grained access control, letting engineers enforce rules like "only authorized admins can see personally-identifying customer data" without needing to write custom code
 - a built-in distributed key-value store. Right now unifyDB sits on top of existing key-value stores to provide the persistence layer. Before I consider this project finished it'll need to ship with a built-in distributed persistence layer

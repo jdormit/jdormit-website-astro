@@ -3,6 +3,7 @@ title: Building a purely-functional static site generator
 author: Jeremy Dormitzer
 pubDate: 2020-12-28
 ---
+
 Ok, I know. That was kind of a lie. No static site generator can ever really be purely functional, since the side effects are the whole point. But I think I found a way to build a site generator that retains all the benefits of a purely functional architecture - simplicity, flexibility, and hackability.
 
 Let me back up. I have been looking into new technology for my website for a while now. Right now I'm using a very capable site generator called [Pollen](https://docs.racket-lang.org/pollen/), but it has started to feel too complicated for my needs. I found [Gatsby.js](https://www.gatsbyjs.com/), and while it ticks most of the right boxes (able to source content from multiple sources at compile time, pluggable with a huge plugin ecosystem), it still has a ton of features I'm never going to use and feels over-architected for what should be a simple solution.
@@ -10,6 +11,7 @@ Let me back up. I have been looking into new technology for my website for a whi
 So I decided to build my own static site generator. I'm calling it [Obelix](https://github.com/obelix-site-builder/obelix), and it aims to combine the best parts of Gatsby with a stripped-down, simple architecture. This blog post was rendered in it! In this post, I'm going to give a brief overview of how Obelix works and talk about why I built it this way.
 
 ## The big picture
+
 Obelix uses a simple internal data structure to represent the contents of a static site:
 
 ```clojure
