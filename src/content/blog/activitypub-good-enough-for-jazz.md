@@ -1,7 +1,7 @@
 ---
 title: "ActivityPub: Good enough for jazz"
 author: Jeremy Dormitzer
-published: 2019-01-07
+pubDate: 2019-01-07
 ---
 <img alt="activitypub" src="/images/activitypub.png" />
 

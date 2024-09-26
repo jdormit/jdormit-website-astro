@@ -1,0 +1,16 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { marked } from "marked";
+import excerptHtml from "excerpt-html";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+  pruneLength: number;
+}
+
+const { post, pruneLength } = Astro.props;
+// @ts-ignore
+const content: string = marked.parse(post.body);
+---
+
+<Fragment set:html={excerptHtml(content, { pruneLength: pruneLength })} />

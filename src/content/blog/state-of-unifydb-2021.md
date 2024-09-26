@@ -1,7 +1,7 @@
 ---
 title: "State of unifyDB: 2021"
 author: Jeremy Dormitzer
-published: 2021-11-11
+pubDate: 2021-11-11
 ---
 
 2021 is almost over! And it's been over a year since I've written anything about [my work-in-progress graph database unifyDB](/blog/unifydb-dev-diary-0-intro). BUT just because I'm bad at blogging doesn't mean I haven't made any progress. In fact, a bunch of exciting stuff happened for unifyDB in 2021, and I'm going to info-dump it all on you 🙃.

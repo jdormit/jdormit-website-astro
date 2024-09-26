@@ -1,7 +1,7 @@
 ---
 title: "More than JSON: ActivityPub and JSON-LD"
 author: Jeremy Dormitzer
-published: 2019-04-23
+pubDate: 2019-04-23
 ---
 > *In which our hero discovers the power of normalization and JSON-LD*
 

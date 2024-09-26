@@ -1,7 +1,7 @@
 ---
 title: "unifyDB Dev Diary 1: the query system"
 author: Jeremy Dormitzer
-published: 2020-10-03
+pubDate: 2020-10-03
 ---
 This is the first development diary for the database I'm writing, [unifyDB](https://github.com/unifydb/unifydb). I wrote a brief introduction to the project [here](https://jeremydormitzer.com/blog/unifydb-dev-diary-0-intro.html). In this post I'm going to talk about unifyDB's query system: what it does and how it works.
 

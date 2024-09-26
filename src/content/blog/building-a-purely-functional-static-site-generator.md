@@ -1,7 +1,7 @@
 ---
 title: Building a purely-functional static site generator
 author: Jeremy Dormitzer
-published: 2020-12-28
+pubDate: 2020-12-28
 ---
 Ok, I know. That was kind of a lie. No static site generator can ever really be purely functional, since the side effects are the whole point. But I think I found a way to build a site generator that retains all the benefits of a purely functional architecture - simplicity, flexibility, and hackability.
 

@@ -1,7 +1,7 @@
 ---
 title: A DSL for music
 author: Jeremy Dormitzer
-published: 2018-08-05
+pubDate: 2018-08-05
 ---
 ## Haskell School of Music
 

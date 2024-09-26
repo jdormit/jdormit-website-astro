@@ -1,7 +1,7 @@
 ---
 title: What is ActivityPub, and how will it change the internet?
 author: Jeremy Dormitzer
-published: 2018-09-15
+pubDate: 2018-09-15
 ---
 <img alt="a network-shaped board game" src="/images/board-game.jpg" />
 

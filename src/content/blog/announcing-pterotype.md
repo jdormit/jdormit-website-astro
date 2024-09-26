@@ -1,7 +1,7 @@
 ---
 title: Announcing Pterotype
 author: Jeremy Dormitzer
-published: 2018-11-15
+pubDate: 2018-11-15
 ---
 <img alt="a cute pterodactyl" src="/images/pterotype.png" />
 
