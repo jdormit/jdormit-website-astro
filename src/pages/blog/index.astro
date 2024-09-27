@@ -19,10 +19,10 @@ const posts = (await getCollection("blog")).sort(
   </head>
   <body>
     <Header />
-    <main class="px-4 m-auto max-w-prose">
+    <main class="px-4 m-auto max-w-prose text-slate-800">
       <h1 class="mt-12 text-2xl">Jeremy Dormitzer's blog</h1>
       <section>
-        <ul>
+        <ul class="prose prose-slate">
           {
             posts.map((post) => (
               <li class="mt-12">
