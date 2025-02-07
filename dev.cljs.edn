@@ -1,0 +1,4 @@
+^{:open-url false}
+{:main jeremy-website.main
+ :output-dir "public/cljs"
+ :asset-path "cljs"}

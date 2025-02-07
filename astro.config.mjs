@@ -6,6 +6,8 @@ import sitemap from "@astrojs/sitemap";
 
 import tailwind from "@astrojs/tailwind";
 
+import cljs from "./integrations/cljs.ts";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://jeremydormitzer.com",
@@ -20,5 +22,6 @@ export default defineConfig({
     tailwind({
       applyBaseStyles: false,
     }),
+    cljs(),
   ],
 });
