@@ -14,7 +14,7 @@ export default function cljs(): AstroIntegration {
       'astro:build:start': async () => {
         const { execSync } = await import('child_process');
         try {
-          execSync('clojure -m figwheel.main -O advanced -bo dev', { stdio: 'inherit' });
+          execSync('clojure -M -m figwheel.main -O advanced -bo dev', { stdio: 'inherit' });
         } catch (error) {
           console.error('ClojureScript compilation failed:', error);
           throw error;
